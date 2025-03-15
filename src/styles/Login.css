@@ -1,0 +1,72 @@
+/* src/styles/components/Login.css */
+
+/* Container styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, rgb(213, 202, 224), rgb(184, 201, 231));  /* Gradient background */
+  font-family: Arial, sans-serif;
+}
+
+/* Form container styles */
+.login-form-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);  /* Soft shadow for floating effect */
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title styles */
+.login-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input styles */
+.login-input {
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.login-input:focus {
+  border-color: #2575fc; /* Blue border on focus */
+}
+
+/* Error message styles */
+.login-error {
+  color: #e74c3c;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Button styles */
+.login-button {
+  width: 50%;
+  padding: 12px;
+  background-color: #ec4a38;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 0 auto;
+}
+
+.login-button:hover {
+  background-color: #d4685c;  /* Darker red on hover */
+  transform: scale(1.05);  /* Slight zoom on hover */
+}

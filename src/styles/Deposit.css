@@ -1,0 +1,79 @@
+/* Disable zoom functionality */
+html, body {
+    touch-action: none;  /* Disables pinch zoom for both HTML and body */
+    user-select: none;    /* Optional: Prevents text selection to avoid zooming actions */
+}
+
+.deposit {
+    padding: 20px;
+    background-color: #fff;
+    max-width: 450px; /* Reduced max-width for a more compact layout */
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Prevents any zoom effect */
+    touch-action: none;  /* Disable pinch zoom for elements within the deposit page */
+}
+
+h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 18px;
+    color: #34495e;
+}
+
+input[type='number'] {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #2980b9;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #3498db;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Back button styling */
+.back-button {
+    background-color: #e74c3c;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background-color: #c0392b;
+}

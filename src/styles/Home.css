@@ -1,0 +1,33 @@
+/* src/styles/home.css */
+
+/* Background image for Home Page */
+.home {
+    height: 100vh;
+    background: url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/UD7CEz6/bank-bank-building-branch_vyks9ofi_thumbnail-1080_01.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.home-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.home button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.home button:hover {
+    background-color: #c0392b;
+}

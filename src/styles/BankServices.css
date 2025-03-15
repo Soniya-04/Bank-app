@@ -1,0 +1,42 @@
+/* src/components/BankServices.css */
+.bank-services {
+    padding: 40px; /* Added extra padding to make sure content is not crowded */
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;  /* To make sure it's on top of any possible underlying content */
+  }
+  
+  .bank-services h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 30px; /* Increased bottom margin to provide more space between the header and content */
+    text-align: center;  /* Center the header for better alignment */
+  }
+  
+  .bank-services p {
+    font-size: 16px;
+    color: #34495e;
+    margin-bottom: 20px;
+    text-align: center; /* Center the paragraph text */
+  }
+  
+  .service-section {
+    margin-bottom: 30px;
+  }
+  
+  .service-section h3 {
+    font-size: 22px;
+    color: #2980b9;
+    margin-bottom: 10px;
+  }
+  
+  .service-section p {
+    font-size: 16px;
+    color: #34495e;
+  }
+  
+ 
+  

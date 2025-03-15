@@ -1,0 +1,78 @@
+/* src/styles/dashboard.css */
+
+/* Add top margin to create space between the header and the dashboard content */
+.dashboard-container {
+    margin-top: 100px; /* Adjust this value to control the gap from the header */
+}
+
+/* Dashboard Links */
+.dashboard-links a {
+    display: block;
+    margin: 15px 0;
+    font-size: 18px;
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.dashboard-links a:hover {
+    color: #3498db;  /* Elegant blue on hover */
+    transform: translateX(5px);  /* Subtle hover effect */
+}
+
+/* Dashboard Buttons */
+.dashboard-buttons {
+    display: block;
+    margin-top: 40px;  /* Adds more space between links and buttons */
+    text-align: center;
+}
+
+.dashboard-buttons a {
+    display: block;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Adding transition for background color and transform */
+}
+
+.dashboard-buttons a:hover {
+    transform: scale(1.05);  /* Slight zoom on hover */
+    background-color: #f1f1f1;  /* Light background on hover */
+    padding: 12px;  /* Ensures the button area increases during hover */
+    border-radius: 5px;  /* Rounded corners during hover */
+}
+
+/* Dashboard Button */
+.dashboard-buttons button {
+    width: 60%;  /* Button width set to 60% */
+    padding: 14px 20px;  /* Adds more padding for better visual appeal */
+    margin: 0 auto;
+    background-color: #a075b1;  /* Elegant purple background */
+    color: white;
+    border: none;
+    border-radius: 6px;  /* Slightly larger border radius for elegance */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.dashboard-buttons button:hover {
+    background-color: #c69fd4;  /* Softer purple on hover */
+    transform: scale(1.05);  /* Slight zoom effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  /* Elegant soft shadow on hover */
+    color: #fff;  /* Keep the text white */
+}
+
+/* Optional: Make button text bold when hovered */
+.dashboard-buttons button:hover {
+    font-weight: bold;
+}
+
+/* Optional: Active state for the buttons */
+.dashboard-buttons button:active {
+    transform: scale(0.98);  /* Slight shrink on click for a more interactive feel */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);  /* Reduce shadow on active click */
+}
+
+/* Optional: Smooth transition for the button states */
+.dashboard-buttons a, .dashboard-buttons button {
+    transition: all 0.3s ease-in-out;
+}

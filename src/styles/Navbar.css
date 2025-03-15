@@ -1,0 +1,50 @@
+/* src/styles/navbar.css */
+
+/* Styling for Navbar */
+.navbar {
+    background-color: #2c3e50;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: top 0.3s ease-in-out; /* Optional: Add smooth transition for navbar */
+}
+
+.navbar-left h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar-links button {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.navbar-links button:hover {
+    background-color: #c0392b;
+}
+
+/* Optional: Add a margin to prevent content from being hidden behind the fixed navbar */
+.home-content {
+    margin-top: 80px; /* Adjust based on navbar height */
+}

@@ -1,0 +1,80 @@
+/* Transaction History Page Styles */
+.transaction-history {
+    padding: 20px;
+    background-color: #fff;
+    max-width: 800px; /* Set a max-width for better layout control */
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Smooth transition for page load */
+  }
+  
+  /* Title styling */
+  .transaction-history h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  /* Account section styling */
+  .account-section {
+    margin-bottom: 30px;
+  }
+  
+  .account-section h3 {
+    font-size: 20px;
+    color: #34495e;
+    margin-bottom: 15px;
+  }
+  
+  .account-section p {
+    font-size: 16px;
+    color: #34495e;
+    margin-bottom: 15px;
+  }
+  
+  /* Styling for transaction list */
+  .transaction-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .transaction-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease; /* Smooth background color change on hover */
+  }
+  
+  .transaction-item:hover {
+    background-color: #f9f9f9; /* Light hover effect */
+  }
+  
+  /* Transaction details styling */
+  .transaction-item span {
+    font-size: 16px;
+    color: #34495e;
+  }
+  
+  /* Transaction amount styling */
+  .transaction-item .amount {
+    font-weight: bold;
+  }
+  
+  .transaction-item .deposit {
+    color: #2ecc71; /* Green for deposit */
+  }
+  
+  .transaction-item .withdrawal {
+    color: #e74c3c; /* Red for withdrawal */
+  }
+  
+  /* Error message styling (if any) */
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  

@@ -1,0 +1,136 @@
+/* Profile Section Styling */
+.profile {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 30px auto;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  /* Fade-in animation for profile section */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .profile h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards 0.2s; /* Adding a slight delay for the title */
+  }
+  
+  .profile-info p {
+    font-size: 18px;
+    margin: 10px 0;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards 0.4s; /* Delaying each info line */
+  }
+  
+  .profile-info strong {
+    font-weight: bold;
+  }
+  
+  /* Recent Activity Styling */
+  .recent-activity {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards 0.6s; /* Adding a delay for the recent activity section */
+  }
+  
+  .recent-activity h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .recent-activity p {
+    font-size: 16px;
+  }
+  
+  /* Profile Settings Styling */
+  .profile-settings {
+    margin-top: 30px;
+  }
+  
+  .profile-settings ul {
+    list-style-type: none;
+    padding: 0;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards 0.8s; /* Adding delay for settings list */
+  }
+  
+  .profile-settings li {
+    margin: 10px 0;
+  }
+  
+  .profile-settings a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth transition for color change on hover */
+  }
+  
+  .profile-settings a:hover {
+    color: #c0392b; /* Slight darker red when hovering */
+    text-decoration: underline;
+  }
+  
+  /* Button Styling */
+  .profile button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Button transitions */
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards 1s; /* Delay to animate button in */
+  }
+  
+  .profile button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05); /* Slight scale effect when hovering */
+  }
+  
+  /* Fade-in effect for button on hover */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Hover effect for buttons */
+  .profile button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Profile Links animation */
+  .profile-settings a {
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition for color change and text movement */
+  }
+  
+  .profile-settings a:hover {
+    transform: translateX(5px); /* Add a slight shift when hovered */
+  }
+  

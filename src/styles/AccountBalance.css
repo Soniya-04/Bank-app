@@ -1,0 +1,84 @@
+/* src/components/AccountBalance.css */
+
+/* General styling for the account balance page */
+.account-balance {
+    padding: 20px;
+    background-color: #fff;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .account-balance h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  /* Balance info styling */
+  .balance-info p {
+    font-size: 18px;
+    color: #34495e;
+    margin: 10px 0;
+  }
+  
+  .balance-info strong {
+    color: #e74c3c;
+  }
+  
+  /* Action buttons (Deposit and Withdraw) styling */
+  .actions {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .action-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0 10px;
+  }
+  
+  .deposit {
+    background-color: #27ae60;
+    color: white;
+  }
+  
+  .deposit:hover {
+    background-color: #2ecc71;
+    transform: scale(1.05);
+  }
+  
+  .withdraw {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .withdraw:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+  }
+  
+  /* Back button styling */
+  .back-button {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin-top: 20px;
+  }
+  
+  .back-button:hover {
+    background-color: #3498db;
+    transform: scale(1.05);
+  }
+  
