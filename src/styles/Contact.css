@@ -1,0 +1,157 @@
+/* src/styles/Contact.css */
+
+/* Styling for Contact page */
+.contact {
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.contact-heading {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Description paragraph */
+.contact-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Contact Info Section */
+.contact-info {
+    margin-bottom: 40px;
+    width: 60%; /* Set a fixed width for the contact info */
+    margin: 0 auto; /* Center align the contact info */
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    color: #34495e;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; /* Center align the form elements */
+}
+
+.contact-form label {
+    font-size: 1.1rem;
+    color: #34495e;
+}
+
+/* Input fields and text area */
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 75%;  /* Adjust width for smaller input fields */
+    max-width: 350px;  /* Set a max width for input fields */
+    margin-bottom: 10px;
+}
+
+.contact-form textarea {
+    height: 150px; /* Adjust height of textarea */
+}
+
+/* Submit (Login) button */
+.contact-form button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 50%; /* Make the button width smaller */
+    max-width: 350px; /* Set a max width for the button */
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #c0392b;
+}
+
+/* Social Media Links */
+.social-media {
+    margin-top: 40px;
+}
+
+.social-media h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.social-media ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.social-media li {
+    font-size: 1.2rem;
+}
+
+.social-media a {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design: For smaller screens, adjust the contact info width */
+@media (max-width: 768px) {
+    .contact-info {
+        width: 80%; /* Increase width on smaller screens */
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 0.9rem; /* Adjust font size for mobile */
+        width: 80%; /* Make inputs and textareas responsive */
+    }
+
+    .contact-form button {
+        font-size: 0.9rem; /* Adjust button size for mobile */
+        width: 80%; /* Adjust button width on smaller screens */
+    }
+}
