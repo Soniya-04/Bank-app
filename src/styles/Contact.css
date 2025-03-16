@@ -80,7 +80,7 @@
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: 75%;  /* Adjust width for smaller input fields */
+    width: 77%;  /* Adjust width for smaller input fields */
     max-width: 350px;  /* Set a max width for input fields */
     margin-bottom: 10px;
 }
