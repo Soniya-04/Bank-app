@@ -20,7 +20,7 @@ function About() {
       <ul className="about-values">
         <li>Integrity: We believe in transparency and honesty in every interaction.</li>
         <li>Innovation: We are constantly innovating to provide the best solutions for our clients.</li>
-        <li>Customer Focus: Our customers’ needs are at the heart of everything we do.</li>
+        <li>Customer Focus: Our customers needs are at the heart of everything we do.</li>
         <li>Security: We ensure the highest level of security for all of your financial transactions.</li>
       </ul>
 
@@ -30,4 +30,3 @@ function About() {
 }
 
 export default About;
-
