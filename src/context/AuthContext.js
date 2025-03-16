@@ -13,6 +13,7 @@ export const useAuth = () => {
   return context;
 };
 
+
 // Create the AuthProvider component
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);  // Track the logged-in user

@@ -11,6 +11,7 @@ export const AccountProvider = ({ children }) => {
   const [balance, setBalance] = useState(5000.00); // Example initial balance
   const [transactions, setTransactions] = useState([]); // To store the transaction history
 
+  
   // Deposit function
   const deposit = (amount) => {
     const newBalance = balance + amount;
