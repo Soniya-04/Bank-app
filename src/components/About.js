@@ -7,7 +7,7 @@ function About() {
     <div className="about">
       <h2 className="about-heading">About Us</h2>
       <p className="about-description">
-        Welcome to Bank App, where we revolutionize the banking experience with cutting-edge technology and a customer-first approach. 
+        Welcome to Bank App, where we revolutionize the banking experience with cutting--edge technology and a customer-first approach. 
         Our mission is to offer accessible and reliable financial services to individuals and businesses of all sizes. We believe in providing not just products, but tailored solutions that help our clients succeed financially.
       </p>
       
