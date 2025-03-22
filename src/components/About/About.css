@@ -1,0 +1,94 @@
+/* src/styles/About.css */
+
+/* Styling for About section */
+.about {
+    padding: 30px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+/* Heading Styling */
+.about-heading {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.2s; /* Animation with slight delay */
+}
+
+/* Description text */
+.about-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.4s; /* Animation with delay */
+}
+
+/* Vision text */
+.about-vision-heading {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.6s; /* Animation with delay */
+}
+
+.about-vision-description {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.8s; /* Animation with delay */
+}
+
+/* Core Values list */
+.about-values-heading {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeIn 1s forwards 1s; /* Animation with delay */
+}
+
+.about-values {
+    list-style-type: none;
+    padding: 0;
+    opacity: 0;
+    animation: fadeIn 1s forwards 1.2s; /* Animation with delay */
+}
+
+.about-values li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+/* Footer message */
+.about-footer {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards 1.4s; /* Animation with delay */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
