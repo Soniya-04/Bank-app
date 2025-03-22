@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/BankServices.css';  // Assuming you might want to style it further
+import './BankServices.css';  // Assuming you might want to style it further
 
 function BankServices() {
   return (

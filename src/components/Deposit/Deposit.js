@@ -1,22 +1,27 @@
 import React, { useState } from 'react';
-import { useAccount } from '../context/AccountContext';
+import { useAccount } from '../../context/AccountContext';
 import { useNavigate } from 'react-router-dom';
-import '../styles/Deposit.css';
+import './Deposit.css';
 
 function Deposit() {
   const { balance, deposit, accountNumber } = useAccount(); // Access balance and account number from context
   const [amount, setAmount] = useState('');
-  const [accountNum, setAccountNum] = useState(accountNumber); // State to store the account number entered by the user
+  const [accountNum, setAccountNum] = useState(accountNumber || ''); // State to store the account number entered by the user
   const navigate = useNavigate(); // Use navigate for redirection
 
   const handleDeposit = (e) => {
     e.preventDefault();
+
+    // Validate deposit amount
     if (amount <= 0) {
       alert("Please enter a valid amount.");
       return;
     }
 
-    deposit(Number(amount), accountNum); // Pass account number along with the deposit amount
+    // Call deposit function with amount and account number
+    deposit(Number(amount), accountNum);
+    
+    // Inform the user of the success
     alert(`You have successfully deposited ₹${amount} to account ${accountNum}`);
   };
 
@@ -48,6 +53,7 @@ function Deposit() {
         <button type="submit">Deposit</button>
       </form>
 
+      {/* Back to Account Balance button */}
       <button onClick={() => navigate('/account-balance')}>Back to Account Balance</button>
     </div>
   );

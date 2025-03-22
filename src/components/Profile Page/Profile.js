@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';  // Import useAuth hook
-import '../../styles/Profile.css'; // Import the Profile.css file
+import './Profile.css'; // Import the Profile.css file
 
 function Profile() {
   const { user } = useAuth(); // Access the user data from context
@@ -43,7 +43,7 @@ function Profile() {
       </div>
 
       <Link to="/dashboard">
-        <button>Back to Dashboard</button>
+        <button>Back </button>
       </Link>
     </div>
   );

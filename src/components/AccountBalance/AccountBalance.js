@@ -1,8 +1,8 @@
 // src/components/AccountBalance.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useAccount } from '../context/AccountContext'; // Import the useAccount hook
-import '../styles/AccountBalance.css'; // Import the CSS file for styling
+import { useAccount } from '../../context/AccountContext'; // Import the useAccount hook
+import './AccountBalance.css'; // Import the CSS file for styling
 
 function AccountBalance() {
   // Use the useAccount hook to access the balance from the context
@@ -30,9 +30,9 @@ function AccountBalance() {
       </div>
 
       {/* Back to Dashboard Button */}
-      <Link to="/dashboard">
-        <button className="back-button">Back </button>
-      </Link>
+        <Link to="/dashboard" className="dashboard-link">
+          <button className="back-button">Back</button> {/* Change class to back-button */}
+        </Link>
     </div>
   );
 }

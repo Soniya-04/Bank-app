@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import '../styles/TransactionHistory.css';
-import { useAccount } from '../context/AccountContext';  // Assuming the user account details are in context
+import './TransactionHistory.css';
+import { useAccount } from '../../context/AccountContext';  // Assuming the user account details are in context
 
 // Helper function to group transactions by date and account number
 const groupTransactionsByDateAndAccount = (transactions) => {

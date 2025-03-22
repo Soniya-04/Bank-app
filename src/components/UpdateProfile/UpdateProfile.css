@@ -1,7 +1,7 @@
 /* Ensure these styles only apply to the UpdateProfile component */
 .update-profile-container {
     min-width: 320px; /* Set a minimum width */
-    margin: 0 auto;
+    margin: 80px auto;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
@@ -49,58 +49,47 @@
     font-size: 16px;
   }
   
+  /* Button container for centering and vertical stack */
+  .update-profile-container .button-container {
+    display: flex;
+    flex-direction: column;  /* Stack buttons vertically */
+    justify-content: center; /* Centers the buttons horizontally */
+    align-items: center;     /* Centers the buttons vertically */
+    gap: 15px;               /* Adds space between buttons */
+    margin-top: 20px;        /* Adds space from the content above */
+  }
+  
+  /* Main button styles */
   .update-profile-container button {
-    background-color: #007BFF;
+    background-color: #59d2f0;
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    width: 100%;
+    width: 50%; /* Fixed width for the buttons */
   }
   
   .update-profile-container button:hover {
     background-color: #0056b3;
   }
   
-  /* Back button styling */
-  button[style*="background-color: #f0f0f0"] {
-    display: block;
-    margin: 20px 0;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 10px;
+  /* Styling for the Back button */
+  .update-profile-container .back-button {
+    background-color: #59d2f0; /* Set the background color for the Back button */
+    border: 1px solid #3a79f0;
+    width: auto; /* Make the Back button width auto */
+    padding: 10px 20px;
     cursor: pointer;
-    font-size: 16px;
-    width: auto;
+    
   }
   
-  /* Style for file input */
-  .update-profile-container input[type="file"] {
-    margin-top: 10px;
+  .update-profile-container .back-button:hover {
+    background-color: c; /* Lighten the background color on hover */
   }
   
-  /* Make sure this applies only to the UpdateProfile page */
-  .update-profile-container a {
-    text-decoration: none;
+  /* Remove underline from the link */
+  .update-profile-container .profile-link {
+    text-decoration: none; /* Remove the underline */
   }
-  
-  .update-profile-container .profile-settings {
-    margin-top: 30px;
-  }
-  
-  .update-profile-container .profile-settings h3 {
-    font-size: 18px;
-    color: #555;
-  }
-  
-  .update-profile-container .profile-settings ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .update-profile-container .profile-settings li {
-    margin-bottom: 10px;
-  }
-  

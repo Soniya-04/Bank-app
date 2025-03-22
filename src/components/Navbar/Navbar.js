@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';  // Import useAuth hook
-import '../styles/Navbar.css';
+import { useAuth } from '../../context/AuthContext';  // Import useAuth hook
+import './Navbar.css';
 
 function Navbar() {
   const { user, logout, isLoggedIn, loading } = useAuth();  // Access the user, logout, isLoggedIn, and loading state from context

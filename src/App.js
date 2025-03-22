@@ -1,20 +1,22 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
-import Login from './components/Login';
-import Dashboard from './components/Dashboard';
+import Navbar from './components/Navbar/Navbar';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import Login from './components/Login/Login';
+import Dashboard from './components/Dashboard/Dashboard';
 import Profile from './components/Profile Page/Profile';
-import UpdateProfile from './components/Profile Page/UpdateProfile/UpdateProfile';
-import AccountBalance from './components/AccountBalance';
-import BankServices from './components/BankServices';
-import TransactionHistory from './components/TransactionHistory';
-import Deposit from './components/Deposit';
-import Withdraw from './components/Withdraw';
-import ChangePassword from './components/Profile Page/ChangePassword/ChangePassword';  // Import ChangePassword component
+import UpdateProfile from './components/UpdateProfile/UpdateProfile';
+import AccountBalance from './components/AccountBalance/AccountBalance';
+import BankServices from './components/BankServices/BankServices';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+import Deposit from './components/Deposit/Deposit';
+import Withdraw from './components/Withdraw/Withdraw';
+import ChangePassword from './components/ChangePassword/ChangePassword';  // Import ChangePassword component
 import { AuthProvider, useAuth } from './context/AuthContext'; // Import AuthContext
+
+
 
 function App() {
   return (

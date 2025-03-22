@@ -1,0 +1,66 @@
+/* Deposit Section Styling */
+.deposit, .withdraw {
+    width: 60%; /* Kept the width at 60% for a larger section */
+    max-width: 400px; /* Maximum width for spaciousness */
+    padding: 30px; /* Padding inside for spacing */
+    border-radius: 12px; /* Rounded corners */
+    margin: 100px auto 20px auto; /* Centered with margin at top and bottom */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: all 0.4s ease-in-out; /* Smooth transition on hover */
+    background-color: #fff; /* White background */
+    border: 1px solid #ddd; /* Light border */
+  }
+  
+  /* Deposit Section Styling */
+  .deposit {
+    background-color: #27ae60; /* Green for deposit */
+    color: white; /* White text color */
+    margin-top: 70px; /* Margin from the top */
+  }
+  
+  .deposit:hover {
+    background-color: #2ecc71;  /* Lighter green */
+    transform: translateY(-5px);  /* Floating effect */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);  /* Deep shadow when hovered */
+  }
+  
+  /* Withdraw section styling */
+  .withdraw {
+    background-color: #f8a50a;  /* Red */
+    color: white;
+    margin-top: 70px;
+  }
+  
+  .withdraw:hover {
+    background-color: #f8b263;  /* Darker red */
+    transform: translateY(-5px);  /* Floating effect */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);  /* Deep shadow when hovered */
+  }
+  
+  /* Styling for the labels and input fields inside deposit and withdraw pages */
+  .deposit h2, .withdraw h2 {
+    font-size: 32px;  /* Increased font size for headings */
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .deposit label, .withdraw label {
+    font-size: 20px;  /* Larger font size for labels */
+    color: #f4f4f4;
+  }
+  
+  /* Input field styling - making it slightly smaller */
+  .deposit input[type='number'], .withdraw input[type='number'] {
+    width: 70%;  /* Reduced width from 80% to 70% for a smaller input field */
+    padding: 12px;  /* Reduced padding for a more compact field */
+    font-size: 16px;  /* Slightly smaller font for input text */
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+
+  
+  

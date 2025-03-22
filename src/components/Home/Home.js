@@ -1,7 +1,7 @@
 // src/components/Home.js
 import React from 'react';
-import Navbar from './Navbar';
-import'../styles/Home.css';
+import Navbar from '../Navbar/Navbar';
+import'./Home.css';
 function Home() {
   return (
     <div className="home">

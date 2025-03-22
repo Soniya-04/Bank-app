@@ -1,8 +1,8 @@
 // src/components/Withdraw.js
 import React, { useState } from 'react';
-import { useAccount } from '../context/AccountContext';  // Access account context
+import { useAccount } from '../../context/AccountContext';  // Access account context
 import { useNavigate } from 'react-router-dom';
-import '../styles/Deposit.css';
+import './Deposit.css';
 
 
 function Withdraw() {
@@ -27,7 +27,7 @@ function Withdraw() {
     withdraw(Number(amount));  // Call withdraw function from context
     alert(`You have successfully withdrawn ₹${amount}`);  // Show confirmation message
 
-    navigate('/account-balance');  // Redirect to the account balance page after withdrawal
+     // Redirect to the account balance page after withdrawal
   };
 
   return (

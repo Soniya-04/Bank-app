@@ -59,7 +59,7 @@
 
 /* Back button styling */
 .back-button {
-  background-color: #a3c0d4;
+  background-color: #59d2f0;
   color: white;
   padding: 10px 20px;  /* Fixed padding for the back button */
   border: none;
@@ -77,6 +77,11 @@
 
 /* Hover effect for back button */
 .back-button:hover {
-  background-color: #66a2ca;
+  background-color: #0056b3;
   transform: scale(1.05);
 }
+/* Remove underline from the Link component */
+.dashboard-link {
+  text-decoration: none; /* Ensure there is no underline */
+}
+

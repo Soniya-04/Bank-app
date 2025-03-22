@@ -26,13 +26,13 @@
   
   /* Withdraw section styling */
   .withdraw {
-    background-color: #c7802f;  /* Red */
+    background-color: #f8a50a;  /* Red */
     color: white;
     margin-top: 70px;
   }
   
   .withdraw:hover {
-    background-color: #e6a938;  /* Darker red */
+    background-color: #f8b263;  /* Darker red */
     transform: translateY(-5px);  /* Floating effect */
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);  /* Deep shadow when hovered */
   }

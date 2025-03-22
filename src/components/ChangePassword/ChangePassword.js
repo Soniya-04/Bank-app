@@ -1,7 +1,8 @@
 // src/components/Profile Page/ChangePassword/ChangePassword.js
 import React, { useState } from 'react';
-import { useAuth } from '../../../context/AuthContext'; // Correctly importing useAuth
+import { useAuth } from '../../context/AuthContext'; // Correctly importing useAuth
 import './ChangePassword.css'; // Import the CSS file for styling
+import { Link } from 'react-router-dom';
 const ChangePassword = () => {
   const { updatePassword } = useAuth(); // Destructure updatePassword function from useAuth
   const [newPassword, setNewPassword] = useState('');
@@ -10,6 +11,7 @@ const ChangePassword = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log("ChangePassword Component Rendered");
 
     if (newPassword !== confirmPassword) {
       setError('Passwords do not match');
@@ -22,7 +24,7 @@ const ChangePassword = () => {
   };
 
   return (
-    <div>
+    <div className="change-password-container"> {/* Add this class to your outer div */}
       <h2>Change Password</h2>
       <form onSubmit={handleSubmit}>
         <input 
@@ -39,6 +41,11 @@ const ChangePassword = () => {
         />
         {error && <p>{error}</p>}
         <button type="submit">Update Password</button>
+        <div className="button-container">
+          <Link to="/profile" className="profile-link">
+            <button className="back-button">Back</button> {/* Change class to back-button */}
+          </Link>
+        </div>
       </form>
     </div>
   );
