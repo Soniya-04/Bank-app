@@ -26,7 +26,7 @@ function Profile() {
         <p><strong>Name:</strong> {user.name}</p>
         <p><strong>Email:</strong> {user.email}</p>
         <p><strong>Phone Number:</strong> {user.phoneNumber}</p> {/* Display phone number */}
-        <p><strong>Registration Date:</strong> {user.registrationDate}</p>
+        <p><strong>Registration Date:</strong> 20/12/2024</p>
       </div>
 
       <div className="recent-activity">
