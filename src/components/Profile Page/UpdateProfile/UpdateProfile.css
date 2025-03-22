@@ -1,0 +1,106 @@
+/* Ensure these styles only apply to the UpdateProfile component */
+.update-profile-container {
+    min-width: 320px; /* Set a minimum width */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+  }
+  
+  /* Header Styling */
+  .update-profile-container h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Profile image section */
+  .profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .profile-image img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  /* Input fields and labels */
+  .update-profile-container label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .update-profile-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .update-profile-container button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .update-profile-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Back button styling */
+  button[style*="background-color: #f0f0f0"] {
+    display: block;
+    margin: 20px 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: auto;
+  }
+  
+  /* Style for file input */
+  .update-profile-container input[type="file"] {
+    margin-top: 10px;
+  }
+  
+  /* Make sure this applies only to the UpdateProfile page */
+  .update-profile-container a {
+    text-decoration: none;
+  }
+  
+  .update-profile-container .profile-settings {
+    margin-top: 30px;
+  }
+  
+  .update-profile-container .profile-settings h3 {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .update-profile-container .profile-settings ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .update-profile-container .profile-settings li {
+    margin-bottom: 10px;
+  }
+  

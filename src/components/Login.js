@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import '../styles/Login.css';  // Import the CSS file
+import '../styles/Login.css';
 
 function Login() {
   const { login } = useAuth();
@@ -11,16 +11,23 @@ function Login() {
   const [error, setError] = useState('');
 
   const handleLogin = () => {
+    console.log('Attempting to login...');
+
+    // Check email and password validity
     if (!email.endsWith('@gmail.com')) {
       setError('Please enter a valid Gmail address');
       return;
     }
 
-    if (email === 'user@gmail.com' && password === 'password') {
-      login({ email });
-      navigate('/dashboard');
+    const loginSuccess = login({ email, password });
+
+    if (loginSuccess) {
+      console.log('Login success');
+      setError(''); // Clear any previous errors
+      navigate('/dashboard'); // Redirect to dashboard
     } else {
-      setError('Invalid credentials');
+      console.log('Login failed');
+      setError('Invalid credentials'); // Show error if login fails
     }
   };
 

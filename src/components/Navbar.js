@@ -1,11 +1,15 @@
-// src/components/Navbar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';  // Import useAuth hook
-import'../styles/Navbar.css';
+import '../styles/Navbar.css';
 
 function Navbar() {
-  const { user, logout } = useAuth();  // Access the user and logout from context
+  const { user, logout, isLoggedIn, loading } = useAuth();  // Access the user, logout, isLoggedIn, and loading state from context
+
+  // Don't render anything until the user state is loaded (i.e., until loading is false)
+  if (loading) {
+    return null; // You can render a loading spinner here if you prefer
+  }
 
   return (
     <header className="navbar">
@@ -18,7 +22,7 @@ function Navbar() {
         <Link to="/contact">Contact</Link>
 
         {/* Conditionally render the login/logout button */}
-        {user ? (
+        {isLoggedIn ? (
           <>
             <Link to="/dashboard">
               <button>Dashboard</button>

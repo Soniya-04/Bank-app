@@ -13,10 +13,10 @@ function AccountBalance() {
       <h2>Your Account Balance</h2>
       <div className="balance-info">
         {/* Display the balance dynamically */}
-        <p><strong>Balance:</strong> ${balance.toFixed(2)}</p>
-        <p><strong>Account Type:</strong> Checking</p>
+        <p><strong>Balance:</strong> ₹{balance.toFixed(2)}</p>
+        <p><strong>Account Type:</strong>Savings</p>
         <p><strong>Account Number:</strong> 1234-5678-9876</p>
-        <p><strong>Bank:</strong> Example Bank</p>
+        <p><strong>Bank:</strong> Indian Bank</p>
       </div>
 
       {/* Deposit and Withdraw Buttons */}
@@ -31,7 +31,7 @@ function AccountBalance() {
 
       {/* Back to Dashboard Button */}
       <Link to="/dashboard">
-        <button className="back-button">Back to Dashboard</button>
+        <button className="back-button">Back </button>
       </Link>
     </div>
   );

@@ -1,84 +1,82 @@
-/* src/components/AccountBalance.css */
-
-/* General styling for the account balance page */
+/* General styles for account balance container */
 .account-balance {
-    padding: 20px;
-    background-color: #fff;
-    max-width: 800px;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .account-balance h2 {
-    font-size: 28px;
-    color: #2c3e50;
-    margin-bottom: 20px;
-  }
-  
-  /* Balance info styling */
-  .balance-info p {
-    font-size: 18px;
-    color: #34495e;
-    margin: 10px 0;
-  }
-  
-  .balance-info strong {
-    color: #e74c3c;
-  }
-  
-  /* Action buttons (Deposit and Withdraw) styling */
-  .actions {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  .action-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    margin: 0 10px;
-  }
-  
-  .deposit {
-    background-color: #27ae60;
-    color: white;
-  }
-  
-  .deposit:hover {
-    background-color: #2ecc71;
-    transform: scale(1.05);
-  }
-  
-  .withdraw {
-    background-color: #e74c3c;
-    color: white;
-  }
-  
-  .withdraw:hover {
-    background-color: #c0392b;
-    transform: scale(1.05);
-  }
-  
-  /* Back button styling */
-  .back-button {
-    background-color: #2980b9;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    display: block;
-    margin-top: 20px;
-  }
-  
-  .back-button:hover {
-    background-color: #3498db;
-    transform: scale(1.05);
-  }
-  
+  padding: 20px;
+  background-color: #f4f6f9; /* Softer grayish-blue for a more pleasing background */
+  max-width: 800px;
+  margin: 80px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid #d1d9e0; /* Lighter gray border for a subtle outline */
+}
+/* Balance information section */
+.balance-info {
+  padding: 40px;  /* Increased padding for more space inside the section */
+  background-color: #f0f4f8; /* Soft light gray-blue for the balance info section */
+  border: 1px solid #ccc; /* Light border to define the section */
+  border-radius: 8px; /* Slightly larger rounded corners */
+}
+
+/* Balance information text */
+.balance-info p {
+  font-size: 20px;  /* Increased font size for better readability */
+  color: #34495e; /* Darker text color for good contrast */
+  margin: 12px 0;  /* Slightly increased margin for better spacing */
+}
+/* Action buttons container inside account balance page */
+.actions {
+  margin-top: 0px;  /* Removed the space above the buttons, making them directly below balance info */
+  text-align: center;
+  display: flex; /* Flexbox to align buttons horizontally */
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 10px; /* Gap between the buttons */
+  margin-bottom: 0px;  /* Ensure no extra space below the buttons */
+}
+
+/* Action button styling inside account balance page */
+.action-button {
+  padding: 12px 30px;  /* Increased padding to make the button a bit bigger */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;  /* Font size for readability */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: auto;  /* Allow the button to stretch based on content */
+  min-width: 160px;  /* Set a minimum width to prevent the button from being too small */
+  background-color: #2980b9;  /* Default background color */
+  color: white; /* White text for better contrast */
+  text-align: center;  /* Center the text inside the button */
+  display: inline-block;  /* Make it behave like a block-level element */
+  text-decoration: none;  /* Removed underline */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow for floating effect */
+}
+
+/* Hover effect for action buttons */
+.action-button:hover {
+  background-color: #3498db;  /* Lighter blue on hover */
+  transform: scale(1.05);  /* Slight scaling effect on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);  /* Darker shadow on hover */
+}
+
+/* Back button styling */
+.back-button {
+  background-color: #a3c0d4;
+  color: white;
+  padding: 10px 20px;  /* Fixed padding for the back button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: block;
+  margin-top: 20px;  /* Slight space before the back button */
+  text-align: center;
+  width: 150px;  /* Fixed width for back button */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hover effect for back button */
+.back-button:hover {
+  background-color: #66a2ca;
+  transform: scale(1.05);
+}

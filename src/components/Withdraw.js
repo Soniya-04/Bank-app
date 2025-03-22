@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useAccount } from '../context/AccountContext';  // Access account context
 import { useNavigate } from 'react-router-dom';
+import '../styles/Deposit.css';
 
 
 function Withdraw() {
@@ -24,7 +25,7 @@ function Withdraw() {
     }
 
     withdraw(Number(amount));  // Call withdraw function from context
-    alert(`You have successfully withdrawn $${amount}`);  // Show confirmation message
+    alert(`You have successfully withdrawn ₹${amount}`);  // Show confirmation message
 
     navigate('/account-balance');  // Redirect to the account balance page after withdrawal
   };
@@ -32,7 +33,7 @@ function Withdraw() {
   return (
     <div className="withdraw">
       <h2>Withdraw Money</h2>
-      <p>Current Balance: ${balance}</p>  {/* Show current balance */}
+      <p>Current Balance: ₹{balance}</p>  {/* Show current balance */}
       <form onSubmit={handleWithdraw}>  {/* Handle form submission */}
         <label htmlFor="amount">Amount to Withdraw:</label>
         <input
@@ -48,5 +49,6 @@ function Withdraw() {
     </div>
   );
 }
+
 
 export default Withdraw;

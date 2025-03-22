@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -7,60 +6,70 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
-import Profile from './components/Profile';
+import Profile from './components/Profile Page/Profile';
+import UpdateProfile from './components/Profile Page/UpdateProfile/UpdateProfile';
 import AccountBalance from './components/AccountBalance';
 import BankServices from './components/BankServices';
 import TransactionHistory from './components/TransactionHistory';
-import Deposit from './components/Deposit';  // Import Deposit Component
-import Withdraw from './components/Withdraw';  // Import Withdraw Component
-import { useAuth } from './context/AuthContext';  // Import the AuthContext
+import Deposit from './components/Deposit';
+import Withdraw from './components/Withdraw';
+import ChangePassword from './components/Profile Page/ChangePassword/ChangePassword';  // Import ChangePassword component
+import { AuthProvider, useAuth } from './context/AuthContext'; // Import AuthContext
 
 function App() {
-  const { user } = useAuth();  // Access the user state from context
+  return (
+    <AuthProvider>
+      <Router>
+        <Navbar />
+        <RoutesWrapper />
+      </Router>
+    </AuthProvider>
+  );
+}
+
+function RoutesWrapper() {
+  const { user, isLoggedIn } = useAuth();  // Use the authentication context
 
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        {/* Public Routes */}
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/login" element={<Login />} />
+    <Routes>
+      {/* Public Routes */}
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/login" element={<Login />} />
 
-        {/* Protected Routes */}
-        <Route 
-          path="/dashboard" 
-          element={user ? <Dashboard /> : <Navigate to="/login" />} 
-        />
-        <Route 
-          path="/profile" 
-          element={user ? <Profile /> : <Navigate to="/login" />} 
-        />
-        <Route 
-          path="/account-balance" 
-          element={user ? <AccountBalance /> : <Navigate to="/login" />} 
-        />
-        <Route 
-          path="/bank-services" 
-          element={user ? <BankServices /> : <Navigate to="/login" />} 
-        />
-        <Route 
-          path="/transaction-history" 
-          element={user ? <TransactionHistory /> : <Navigate to="/login" />} 
-        />
-        
-        {/* Additional Routes for Deposit and Withdraw */}
-        <Route 
-          path="/deposit" 
-          element={user ? <Deposit /> : <Navigate to="/login" />} 
-        />
-        <Route 
-          path="/withdraw" 
-          element={user ? <Withdraw /> : <Navigate to="/login" />} 
-        />
-      </Routes>
-    </Router>
+      {/* Protected Routes */}
+      <Route 
+        path="/dashboard" 
+        element={isLoggedIn ? <Dashboard /> : <Navigate to="/login" />} 
+      />
+      <Route 
+        path="/profile" 
+        element={isLoggedIn ? <Profile /> : <Navigate to="/login" />} 
+      />
+      <Route 
+        path="/update-profile" 
+        element={isLoggedIn ? <UpdateProfile /> : <Navigate to="/login" />} 
+      />
+      <Route path="/account-balance" element={isLoggedIn ? <AccountBalance /> : <Navigate to="/login" />} />
+      <Route path="/bank-services" element={isLoggedIn ? <BankServices /> : <Navigate to="/login" />} />
+      <Route path="/transaction-history" element={isLoggedIn ? <TransactionHistory /> : <Navigate to="/login" />} />
+      
+      <Route 
+        path="/deposit" 
+        element={isLoggedIn ? <Deposit /> : <Navigate to="/login" />} 
+      />
+      <Route 
+        path="/withdraw" 
+        element={isLoggedIn ? <Withdraw /> : <Navigate to="/login" />} 
+      />
+      
+      {/* Add Change Password Route */}
+      <Route 
+        path="/change-password" 
+        element={isLoggedIn ? <ChangePassword /> : <Navigate to="/login" />} 
+      />
+    </Routes>
   );
 }
 
