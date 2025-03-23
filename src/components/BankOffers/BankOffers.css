@@ -1,0 +1,74 @@
+/* src/components/BankOffers.css */
+
+/* Container for the bank offers */
+.bank-offers-container {
+    
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Needed for positioning the close button */
+    width: 70%; /* Adjust the width to your desired size (you can change this percentage) */
+    max-width: 800px; /* Optionally, set a max-width to prevent it from becoming too wide */
+    margin: 0 auto; /* Center the container */
+  }
+  /* Offer Disclaimer (Limited Offer! Hurry up! link) */
+  .offer-disclaimer {
+    cursor: pointer;
+    color: #2980b9;
+    font-size: 2rem; /* Increased font size */
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .offer-disclaimer:hover {
+    text-decoration: underline;
+  }
+  
+  /* Small close button (X) */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    color: #2980b9;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .close-button:hover {
+    color: #c0392b; /* Change color on hover */
+  }
+  
+  /* Offers list container */
+  .offers-list {
+    margin-top: 20px;
+  }
+  
+  /* Offer item styling */
+  .offer-item {
+    background-color: #f9f9f9;
+    padding: 10px 15px; /* Reduced padding to reduce overall size */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Reduced box-shadow for smaller border effect */
+    margin-bottom: 10px; /* Reduced margin between items */
+    text-align: left;
+  }
+  
+  /* Hover effect for offer items */
+  .offer-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .offer-title {
+    font-size: 20px;
+    color: #2980b9;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .offer-description {
+    font-size: 16px;
+    color: #555;
+  }
+  

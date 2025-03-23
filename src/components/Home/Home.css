@@ -1,23 +1,33 @@
-/* src/styles/home.css */
-
 /* Background image for Home Page */
 .home {
-    height: 100vh;
+    min-height: 100vh;  /* Ensure at least the full height of the viewport */
+    height: auto;  /* Allow the height to grow based on content */
     background: url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/UD7CEz6/bank-bank-building-branch_vyks9ofi_thumbnail-1080_01.png') no-repeat center center/cover;
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center center; /* Centers the background image */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    padding: 0 15px; /* Padding around the sides */
 }
 
+/* Content container on the home page */
 .home-content {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 100%; /* Prevents it from being too wide */
+    width: 50%;
+    box-sizing: border-box;
+    z-index: 2;
+    margin-top: 250px; /* Ensures content stays above the background */
 }
 
+/* Start Tour button */
 .home button {
     background-color: #e74c3c;
     color: white;
@@ -31,3 +41,19 @@
 .home button:hover {
     background-color: #c0392b;
 }
+
+/* Styling for the Start Tour button (inside home-content) */
+.start-tour-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.start-tour-button:hover {
+    background-color: #45a049;
+}
+

@@ -1,0 +1,139 @@
+/* src/components/Tour.css */
+
+.tour-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  .tour-step {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tour-content {
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    color: #2980b9; /* Primary blue */
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  button {
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .tour-step .button-container .custom-back-button {
+    width: 100px;  /* Adjust width here */
+    background-color: #f39c12; /* Yellow for back */
+    color: white;
+  }
+  
+  /* Next button styles */
+  .next-button {
+    background-color: #27ae60; /* Green for next */
+    color: white;
+    width: 100px; /* Width for next button */
+  }
+  
+  /* Container for buttons to align them horizontally */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Align buttons horizontally */
+  .button-container button {
+    margin: 0 10px; /* Space between buttons */
+  }
+  /* Ensure the list items are properly styled */
+/* Style for the unordered list */
+ul {
+    list-style-type: none; /* Removes the default bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes any unwanted margin */
+    background-color: #f9f9f9; /* Light background for the list */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for subtle depth */
+    padding: 20px; /* Adds space around the list items */
+  }
+  
+  /* Style for each list item */
+  ul li {
+    margin-bottom: 15px; /* Space between each list item */
+    font-size: 1rem; /* Standard font size */
+    color: #555; /* Text color */
+    line-height: 1.6; /* Increases the line height for readability */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    padding-left: 10px; /* Adds padding to the left of the text */
+    position: relative; /* Needed for custom bullet styling */
+  }
+  
+  /* Hover effect for list items */
+  ul li:hover {
+    background-color: #ecf0f1; /* Subtle background change on hover */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+  }
+  
+  /* Custom bullet point styling */
+  ul li::before {
+    content: "•"; /* Custom bullet point */
+    color: #2980b9; /* Blue color for the bullet */
+    font-size: 20px; /* Larger size for the bullet */
+    position: absolute; /* Position the bullet to the left */
+    left: 0; /* Align the bullet to the left */
+    top: 50%; /* Vertically center the bullet */
+    transform: translateY(-50%); /* Fine-tune the bullet position */
+  }
+  
+  /* Highlight the label text (Profile, Account Balance, etc.) */
+  ul li strong {
+    color: #2980b9; /* Highlight with a blue color */
+    font-weight: 600; /* Make the label text bold */
+    text-transform: capitalize; /* Capitalize the label */
+  }
+  
+  /* Optional: Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    ul {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    ul li {
+      font-size: 0.9rem; /* Slightly smaller font size on mobile */
+    }
+  }
+  

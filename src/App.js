@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
@@ -13,29 +13,33 @@ import BankServices from './components/BankServices/BankServices';
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 import Deposit from './components/Deposit/Deposit';
 import Withdraw from './components/Withdraw/Withdraw';
-import ChangePassword from './components/ChangePassword/ChangePassword';  // Import ChangePassword component
-import { AuthProvider, useAuth } from './context/AuthContext'; // Import AuthContext
-
-
+import ChangePassword from './components/ChangePassword/ChangePassword';
+import { AuthProvider, useAuth } from './context/AuthContext';
+import Tour from './components/Tour/Tour';  // Import the Tour component
 
 function App() {
+  const [isTourVisible, setIsTourVisible] = useState(false); // Manage visibility of the tour page
+
   return (
     <AuthProvider>
       <Router>
         <Navbar />
-        <RoutesWrapper />
+        <RoutesWrapper 
+          setIsTourVisible={setIsTourVisible} 
+          isTourVisible={isTourVisible} 
+        />
       </Router>
     </AuthProvider>
   );
 }
 
-function RoutesWrapper() {
+function RoutesWrapper({ setIsTourVisible, isTourVisible }) {
   const { user, isLoggedIn } = useAuth();  // Use the authentication context
 
   return (
     <Routes>
       {/* Public Routes */}
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Home setIsTourVisible={setIsTourVisible} />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/login" element={<Login />} />
@@ -56,7 +60,6 @@ function RoutesWrapper() {
       <Route path="/account-balance" element={isLoggedIn ? <AccountBalance /> : <Navigate to="/login" />} />
       <Route path="/bank-services" element={isLoggedIn ? <BankServices /> : <Navigate to="/login" />} />
       <Route path="/transaction-history" element={isLoggedIn ? <TransactionHistory /> : <Navigate to="/login" />} />
-      
       <Route 
         path="/deposit" 
         element={isLoggedIn ? <Deposit /> : <Navigate to="/login" />} 

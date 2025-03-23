@@ -19,6 +19,7 @@ function Contact() {
       setIsEmailValid(false);
     }
   };
+ 
 
   return (
     <div className="contact">
@@ -50,6 +51,12 @@ function Contact() {
             name="name" 
             placeholder="Enter your name" 
             required 
+             // Example of fixing the event handler
+
+             onInvalid={(e) => { /* handle invalid input */ }} 
+             onInput={(e) => { /* handle input change */ }} 
+
+
           />
           
           <label htmlFor="email">Your Email:</label>
@@ -65,6 +72,7 @@ function Contact() {
             title="Email must end with @gmail.com"
             oninvalid="this.setCustomValidity('Please enter a valid Gmail address ending with @gmail.com')" 
             oninput="this.setCustomValidity('')" 
+            
           />
           
           {/* Display an error message if the email is invalid */}
